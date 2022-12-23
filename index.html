@@ -8,7 +8,21 @@
 </head>
 <body>
     <script>
-        
+        let n1 = 0, n2= 1, nextTerm, i=0;
+        function fib(sequences) {
+            if (i > sequences) {
+                n1 = 0
+                n2 = 1
+                return nextTerm;
+            }
+            else {
+                nextTerm = n1 + n2
+                n1 = n2
+                n2 = nextTerm
+                i++
+                return fib(sequences);
+            }
+        }
     </script>
 </body>
 </html>
